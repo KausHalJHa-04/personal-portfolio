@@ -199,6 +199,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .skills-img img { border-radius: .5rem; }
 
+
 /*PORTFOLIO*/
 
 .portfolio { background-color: var(--white-color); }
@@ -219,7 +220,13 @@ img { max-width: 100%; height: auto; display: block; }
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .3s;
+    flex-direction: column;
 }
+
+ .portfolio-link a {
+    color: rgb(0, 13, 255);
+ }
+
 
     .portfolio-img:hover .portfolio-link { bottom: 0; }
 .portfolio-link-color { color: var(--dark-color); }

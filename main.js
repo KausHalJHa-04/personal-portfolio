@@ -188,7 +188,7 @@ window.addEventListener('load', () => {
 
         if (isPageActive) {
             document.title = pageTitle;
-            if (favicon) favicon.href = 'assets/images/favicon.png';
+            if (favicon) favicon.href = 'image/dp_male.svg';
         } else {
             document.title = attentionMessage;
         }

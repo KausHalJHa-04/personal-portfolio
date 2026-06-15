@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaushal Jha's Portfolio</title>
+    <title>Kaushal Jha — Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <base href="/image/"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
-    <link rel="icon" href="image/dp_male.svg">
     <script src="https://kit.fontawesome.com/6fc8f46287.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav-logo">Kaushal Kumar Jha</a>
-            </div>
+            <a href="#home" class="nav-logo"><span class="nav-logo-prompt">~/</span>kaushal<span class="nav-logo-dot">.</span><span class="nav-logo-cursor">_</span></a>
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active"><span class="nav-index">01</span>Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><span class="nav-index">02</span>About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link"><span class="nav-index">03</span>Experience</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link"><span class="nav-index">04</span>Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link"><span class="nav-index">05</span>Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><span class="nav-index">06</span>Contact</a></li>
                 </ul>
             </div>
 
-            
+            <a href="#contact" class="nav-cta">Let's talk</a>
 
             <div class="nav-toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
@@ -37,176 +38,435 @@
     </header>
 
     <main class="l-main">
+
+        <!-- HOME -->
         <section class="home" id="home">
+            <div class="home-stars" id="home-stars"></div>
             <div class="home-container bd-grid">
-                <h1 class="home-title"><span>HE</span><br>LLO</h1>
+                <div class="home-content">
+                    <p class="home-greeting">// Hello, I'm</p>
+                    <h1 class="home-title">Kaushal Jha</h1>
+
+                    <div class="home-terminal">
+                        <div class="home-terminal-bar">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span class="home-terminal-name">role.sh</span>
+                        </div>
+                        <div class="home-terminal-body">
+                            <span class="prompt">kaushal@dev:~$</span>
+                            <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+                        </div>
+                    </div>
+
+                    <p class="home-description">I build dynamic, scalable, end‑to‑end web applications with the MERN stack — turning ideas into clean interfaces and reliable systems, one commit at a time.</p>
+
+                    <div class="home-cta">
+                        <a href="#projects" class="button">View Projects</a>
+                        <a href="#contact" class="button-outline">Contact Me <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+
+                    <div class="home-meta">
+                        <span><i class='bx bxs-circle pulse-dot'></i> Available for opportunities</span>
+                        <span><i class='bx bx-map-pin'></i> New Delhi, India</span>
+                    </div>
+                </div>
 
                 <div class="home-scroll">
-                    <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt' ></i>SCROLL DOWN</a>
+                    <a href="#about" class="home-scroll-link"><i class='bx bx-down-arrow-alt'></i>scroll</a>
                 </div>
-
-                <img src="/image/img-Photoroom.png" alt="image" class="home-img" >
             </div>
         </section>
-    
 
+
+        <!-- ABOUT -->
         <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
+            <div class="section-head bd-grid">
+                <span class="section-cmd">$ cat about.md</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
 
             <div class="about-container bd-grid">
-                <div class="about-img">
-                    <img src="/image/img-Photoroom.png" alt="image">
+                <div class="about-img-wrap">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop" alt="Kaushal Jha workspace">
+                    </div>
+                    <div class="about-img-tag"><i class='bx bx-code-alt'></i> Full Stack Dev</div>
                 </div>
 
-                <div>
-                    <h2 class="about-subtitle">I'm Kaushal Kumar Jha</h2>
-                    <span class="about-profession">Full Stack Web Developer</span>
-                    <p class="about-text">I am a passionate Full Stack Developer skilled in building dynamic and scalable web applications using React.js, Node.js, Express.js, and MongoDB. I enjoy solving problems, creating user-friendly interfaces, and developing efficient back-end systems to deliver complete end-to-end solutions. I am always eager to learn new technologies and contribute to impactful projects.</p>
+                <div class="about-content">
+                    <h3 class="about-subtitle">Kaushal Kumar Jha</h3>
+                    <span class="about-profession">Full Stack Web Developer · MERN</span>
+                    <p class="about-text">I'm a full stack developer who enjoys turning complex problems into simple, elegant interfaces. I work primarily with <strong>React.js, Node.js, Express.js and MongoDB</strong> to build dynamic, scalable web applications — from idea to deployment.</p>
+                    <p class="about-text">Beyond the MERN stack, I've spent time on research‑driven projects during an internship at <strong>DRDO</strong>, and I'm always looking for new technologies to learn and impactful problems to work on.</p>
+
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-number">4+</span>
+                            <span class="about-stat-label">Internships</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number">6</span>
+                            <span class="about-stat-label">Live Projects</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number">10+</span>
+                            <span class="about-stat-label">Technologies</span>
+                        </div>
+                    </div>
 
                     <div class="about-social">
-                        <a href="https://www.linkedin.com/in/kaushal-jha-6073042aa/" class="about-social-icon"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/KausHalJHa-04?tab=repositories" class="about-social-icon"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.instagram.com/_kaushal_jha04/" class="about-social-icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/kaushal-jha-6073042aa/" class="about-social-icon" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/KausHalJHa-04?tab=repositories" class="about-social-icon" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/_kaushal_jha04/" class="about-social-icon" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
                     </div>
-                </div>   
+                </div>
             </div>
         </section>
 
+
+        <!-- EXPERIENCE -->
+        <section class="experience section" id="experience">
+            <div class="section-head bd-grid">
+                <span class="section-cmd">$ git log --experience</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="timeline bd-grid">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-head">
+                            <div>
+                                <h3 class="timeline-role">Research Intern</h3>
+                                <span class="timeline-org">Defence Research &amp; Development Organisation (DRDO) · SSPL · Internship</span>
+                            </div>
+                            <span class="timeline-badge timeline-badge-current">Current</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class='bx bx-calendar'></i> Apr 2026 – Present · 3 mos</span>
+                            <span><i class='bx bx-map-pin'></i> Delhi, India</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Selected for an 8‑week offline research internship at SSPL, DRDO.</li>
+                            <li>Worked under mentor guidance on assigned technical and research‑based projects.</li>
+                            <li>Gained hands‑on exposure to real‑world problem solving, project workflows and professional research environments.</li>
+                            <li>Collaborated on project documentation, implementation and reporting throughout the internship.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Research</span>
+                            <span>Documentation</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-head">
+                            <div>
+                                <h3 class="timeline-role">Frontend Developer Intern</h3>
+                                <span class="timeline-org">BimaScore by Alps Insurance · FusionHive Business Solution</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class='bx bx-calendar'></i> Jan 2026 – Apr 2026 · 4 mos</span>
+                            <span><i class='bx bx-map-pin'></i> Jhandewalan, Delhi · On‑site</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed responsive, user‑friendly web interfaces and converted UI/UX designs into functional pages.</li>
+                            <li>Ensured cross‑browser compatibility while following modern frontend best practices.</li>
+                            <li>Collaborated with the technical team to support development activities and meet project timelines.</li>
+                            <li>Strengthened practical skills in HTML, CSS, JavaScript, React.js, Next.js and Tailwind CSS.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-head">
+                            <div>
+                                <h3 class="timeline-role">Full Stack Development Intern</h3>
+                                <span class="timeline-org">UptoSkills · Full‑time</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class='bx bx-calendar'></i> Jul 2025 – Sep 2025 · 3 mos</span>
+                            <span><i class='bx bx-map-pin'></i> Remote</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed an AI‑powered Resume Builder and Resume Analyzer using React.js, Node.js, Express.js and MongoDB, integrating Gemini APIs for smart suggestions.</li>
+                            <li>Implemented RESTful APIs with JWT authentication and an optimized MongoDB schema for secure, efficient data management.</li>
+                            <li>Built responsive, user‑friendly UIs with React and Tailwind CSS, collaborating via GitHub in a remote setup.</li>
+                            <li>Deployed the application with Docker, hosting on Vercel/Netlify for smooth CI/CD and high availability.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Gemini API</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-head">
+                            <div>
+                                <h3 class="timeline-role">Web Development Intern</h3>
+                                <span class="timeline-org">MS Enterprises · Part‑time</span>
+                            </div>
+                        </div>
+                        <div class="timeline-meta">
+                            <span><i class='bx bx-calendar'></i> Jan 2025 – Apr 2025 · 4 mos</span>
+                            <span><i class='bx bx-map-pin'></i> Sarita Vihar, New Delhi · Hybrid</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Contributed to modern e‑commerce websites — building product catalogs, shopping carts and secure checkout flows.</li>
+                            <li>Built responsive interfaces with React.js, JavaScript and Tailwind CSS for seamless desktop and mobile experiences.</li>
+                            <li>Designed and integrated RESTful APIs with Node.js/Express to manage products, orders and authentication with JWT.</li>
+                            <li>Worked with MongoDB databases for product, user and transaction management, optimizing schema for scalability.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-head bd-grid">
+                <span class="section-cmd">$ ls ./skills</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
 
             <div class="skills-container bd-grid">
-                <div class="skills-box">
-                    <h3 class="skils-subtitle"><b>Frontend</b></h3>
 
-                    <span class="skills-name"><img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JAVASCRIPT"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TAILWIND"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black" alt="REACT"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="BOOTSTRAP"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TYPESCRIPT"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="VITE"></span>
-
-                    <h3 class="skils-subtitle"><b>Backend</b></h3>
-
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white" alt="Nodejs"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Express-%23000000.svg?style=for-the-badge&logo=express&logoColor=white" alt="Express"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastap" alt="FastAPI"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD" alt="NODEMON"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white" alt="JWT"></span>
-                    
-                    <h3 class="skils-subtitle"><b>Database</b></h3>
-
-                    <span class="skills-name"><img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"></span>
-                    
-                    <h3 class="skils-subtitle"><b>Tools and Design</b></h3>
-
-                    <span class="skills-name"><img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="GIT"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GITHUB"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="POSTMAN"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="VERCEL"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="NETLIFY"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="FIGMA"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white" alt="PHOTOSHOP"></span>
-                    <span class="skills-name"><img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="CANVA"></span>
+                <div class="skills-group">
+                    <h3 class="skills-subtitle"><i class='bx bx-code-curly'></i> Frontend</h3>
+                    <div class="skills-tags">
+                        <span class="skill-chip">HTML5</span>
+                        <span class="skill-chip">CSS3</span>
+                        <span class="skill-chip">JavaScript</span>
+                        <span class="skill-chip">TypeScript</span>
+                        <span class="skill-chip">React.js</span>
+                        <span class="skill-chip">Next.js</span>
+                        <span class="skill-chip">Tailwind CSS</span>
+                        <span class="skill-chip">Bootstrap</span>
+                        <span class="skill-chip">Vite</span>
+                    </div>
                 </div>
 
-                <div class="skills-img">
-                <img align="right"alt="coding"width="400"src="https://media.licdn.com/dms/image/C5622AQErlQlcPler2g/feedshare-shrink_2048_1536/0/1587628396592?e=2147483647&v=beta&t=6gbzpglnet87uHEUlsH1GBq6TM1FaNsD8xcWeKZmWa0">
-
+                <div class="skills-group">
+                    <h3 class="skills-subtitle"><i class='bx bx-server'></i> Backend</h3>
+                    <div class="skills-tags">
+                        <span class="skill-chip">Node.js</span>
+                        <span class="skill-chip">Express.js</span>
+                        <span class="skill-chip">FastAPI</span>
+                        <span class="skill-chip">REST APIs</span>
+                        <span class="skill-chip">JWT Auth</span>
+                        <span class="skill-chip">Nodemon</span>
+                    </div>
                 </div>
+
+                <div class="skills-group">
+                    <h3 class="skills-subtitle"><i class='bx bx-data'></i> Database</h3>
+                    <div class="skills-tags">
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-group">
+                    <h3 class="skills-subtitle"><i class='bx bx-wrench'></i> Tools &amp; Design</h3>
+                    <div class="skills-tags">
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">GitHub</span>
+                        <span class="skill-chip">Postman</span>
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Vercel</span>
+                        <span class="skill-chip">Netlify</span>
+                        <span class="skill-chip">Figma</span>
+                        <span class="skill-chip">Photoshop</span>
+                        <span class="skill-chip">Canva</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+
+        <!-- PROJECTS -->
         <section class="portfolio section" id="projects">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-head bd-grid">
+                <span class="section-cmd">$ open ./projects</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
 
             <div class="portfolio-container bd-grid">
-                <div class="portfolio-img">
-                    <img src="image/project1.png" alt="work image" >
 
-                    <div class="portfolio-link">
-                        <a href="https://mern-food-ordering-app-frontend-8971.onrender.com/" class="project-link-name" target="_blank">Cravify Food Delivery Website</a>
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project1.png" alt="Cravify Food Delivery Website">
                     </div>
-                </div>
-
-                <div class="portfolio-img">
-                    <img src="image/project2.png" alt="work image">
-                    <div class="portfolio-link">
-                        <a href="https://resume-analyzer-wine-six.vercel.app/" class="project-link-name" target="_blank">Resmue Analyzer Website</a> <br>
-                        <a href="https://github.com/KausHalJHa-04/Resume_Analyzer.git" class="project-link-name" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a> 
-
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Cravify Food Delivery</h3>
+                        <p class="portfolio-desc">MERN food‑ordering platform with cart, checkout and order management.</p>
+                        <div class="portfolio-links">
+                            <a href="https://mern-food-ordering-app-frontend-8971.onrender.com/" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-img">
-                    <img src="image/project3.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://code-review-site.vercel.app/" class="project-link-name" target="_blank">Code Review Website</a> <br>
-                        <a href="https://github.com/KausHalJHa-04/CODE-REVIEW.git" class="project-link-name" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a> 
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project2.png" alt="Resume Analyzer Website">
                     </div>
-                </div>
-
-                <div class="portfolio-img">
-                    <img src="image/project4.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://apple-landing-page-chi.vercel.app/" class="project-link-name" target="_blank">Apple Landing Page</a> <br>
-                        <a href="https://github.com/KausHalJHa-04/APPLE_Landing-page.git" class="project-link-name" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a> 
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Resume Analyzer</h3>
+                        <p class="portfolio-desc">AI‑powered resume analysis and smart suggestions using Gemini APIs.</p>
+                        <div class="portfolio-links">
+                            <a href="https://resume-analyzer-wine-six.vercel.app/" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/KausHalJHa-04/Resume_Analyzer.git" target="_blank"><i class="fa-solid fa-code"></i> Source</a>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="portfolio-img">
-                    <img src="image/project5.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://boisterous-axolotl-f0048d.netlify.app/" class="project-link-name" target="_blank">Personal Chat Bot</a> <br>
-                        <a href="https://github.com/KausHalJHa-04/AI_Bot.git" class="project-link-name" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a> 
-
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project3.png" alt="Code Review Website">
                     </div>
-                </div>
-
-                <div class="portfolio-img">
-                    <img src="image/project6.png" alt="work image">
-
-                    <div class="portfolio-link">
-                        <a href="https://ai-image-enhancer-tawny-two.vercel.app" class="project-link-name" target="_blank">AI Image Enhancer</a> <br>
-                        <a href="https://github.com/KausHalJHa-04/IMAGE_ENHANCER.git" class="project-link-name" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a> 
-
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Code Review Platform</h3>
+                        <p class="portfolio-desc">A collaborative platform for sharing and reviewing code snippets.</p>
+                        <div class="portfolio-links">
+                            <a href="https://code-review-site.vercel.app/" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/KausHalJHa-04/CODE-REVIEW.git" target="_blank"><i class="fa-solid fa-code"></i> Source</a>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project4.png" alt="Apple Landing Page">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Apple Landing Page</h3>
+                        <p class="portfolio-desc">Pixel‑detail clone of Apple's product landing page with smooth animations.</p>
+                        <div class="portfolio-links">
+                            <a href="https://apple-landing-page-chi.vercel.app/" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/KausHalJHa-04/APPLE_Landing-page.git" target="_blank"><i class="fa-solid fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project5.png" alt="Personal Chat Bot">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Personal Chat Bot</h3>
+                        <p class="portfolio-desc">A conversational AI assistant built for quick, contextual responses.</p>
+                        <div class="portfolio-links">
+                            <a href="https://boisterous-axolotl-f0048d.netlify.app/" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/KausHalJHa-04/AI_Bot.git" target="_blank"><i class="fa-solid fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="portfolio-img">
+                        <img src="image/project6.png" alt="AI Image Enhancer">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">AI Image Enhancer</h3>
+                        <p class="portfolio-desc">Upscale and enhance image quality using AI‑driven processing.</p>
+                        <div class="portfolio-links">
+                            <a href="https://ai-image-enhancer-tawny-two.vercel.app" target="_blank"><i class='bx bx-link-external'></i> Live Demo</a>
+                            <a href="https://github.com/KausHalJHa-04/IMAGE_ENHANCER.git" target="_blank"><i class="fa-solid fa-code"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
 
             </div>
         </section>
 
+
+        <!-- CONTACT -->
         <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+            <div class="section-head bd-grid">
+                <span class="section-cmd">$ ./send-message.sh</span>
+                <h2 class="section-title">Contact</h2>
+            </div>
 
             <div class="contact-container bd-grid">
                 <div class="contact-info">
-                    <h3 class="contact-subtitle">EMAIL</h3>
-                    <span class="contact-text">jhakaushal361@gmail.com</span>
+                    <p class="contact-intro">Have a project in mind, an opportunity, or just want to say hi? My inbox is open.</p>
 
-                    <h3 class="contact-subtitle">PHONE</h3>
-                    <span class="contact-text">+91-9310055989</span>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h3 class="contact-subtitle">Email</h3>
+                            <a class="contact-text" href="mailto:jhakaushal361@gmail.com">jhakaushal361@gmail.com</a>
+                        </div>
+                    </div>
 
-                    <h3 class="contact-subtitle">ADDRESS</h3>
-                    <span class="contact-text">New Delhi, INDIA</span>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h3 class="contact-subtitle">Phone</h3>
+                            <a class="contact-text" href="tel:+919310055989">+91 93100 55989</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h3 class="contact-subtitle">Location</h3>
+                            <span class="contact-text">New Delhi, India</span>
+                        </div>
+                    </div>
+
+                    <div class="about-social contact-social">
+                        <a href="https://www.linkedin.com/in/kaushal-jha-6073042aa/" class="about-social-icon" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/KausHalJHa-04?tab=repositories" class="about-social-icon" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/_kaushal_jha04/" class="about-social-icon" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    </div>
                 </div>
 
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <div class="contact-inputs">
-                         <input type="hidden" name="access_key" value="c39e8d29-911c-4ddc-b937-b556d6cbd61b">
-                        <input type="text" placeholder="Name" name="name" class="contact-input">
-                        <input type="email" placeholder="Email" name="email" class="contact-input">
-                    </div>
-                        
-                        <textarea name="" id="" cols="0" rows="10" class="contact-input" placeholder="Message" name="message"></textarea>
-                        
-                        <input type="submit" value="Send" class="contact-button">
+                    <input type="hidden" name="access_key" value="c39e8d29-911c-4ddc-b937-b556d6cbd61b">
+
+                    <label class="contact-label" for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" name="name" class="contact-input" required>
+
+                    <label class="contact-label" for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@example.com" name="email" class="contact-input" required>
+
+                    <label class="contact-label" for="message">Message</label>
+                    <textarea id="message" rows="5" class="contact-input" placeholder="Tell me about your project..." name="message" required></textarea>
+
+                    <button type="submit" class="contact-button">Send Message <i class='bx bx-paper-plane'></i></button>
                 </form>
             </div>
         </section>
@@ -216,15 +476,16 @@
     <footer class="footer section">
         <div class="footer-container bd-grid">
             <div class="footer-data">
-                <h2 class="footer-title">Kaushal Jha</h2>
-                <p class="footer-text">I'm Kaushal Jha and this is my personal website</p>
+                <h2 class="footer-title"><span class="nav-logo-prompt">~/</span>kaushal<span class="nav-logo-dot">.</span></h2>
+                <p class="footer-text">Full Stack Web Developer building scalable MERN applications from New Delhi, India.</p>
             </div>
 
             <div class="footer-data">
-                <!-- <h2 class="footer-title">Kaushal Jha</h2> -->
+                <h2 class="footer-title">Navigate</h2>
                 <ul>
                     <li><a href="#home" class="footer-link">Home</a></li>
                     <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#experience" class="footer-link">Experience</a></li>
                     <li><a href="#skills" class="footer-link">Skills</a></li>
                     <li><a href="#projects" class="footer-link">Projects</a></li>
                     <li><a href="#contact" class="footer-link">Contact</a></li>
@@ -232,14 +493,18 @@
             </div>
 
             <div class="footer-data">
-                <h2 class="footer-title">FOLLOW</h2>
-
-                <a href="https://www.instagram.com/_kaushal_jha04/" class="footer-social"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/kaushal-jha-6073042aa/" class="footer-social"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/KausHalJHa-04?tab=repositories" class="footer-social"><i class='bx bxl-github'></i></a>
+                <h2 class="footer-title">Follow</h2>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/_kaushal_jha04/" class="footer-social" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/kaushal-jha-6073042aa/" class="footer-social" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/KausHalJHa-04?tab=repositories" class="footer-social" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                </div>
             </div>
         </div>
+        <p class="footer-copy">&copy; <span id="year"></span> Kaushal Jha. Built with curiosity &amp; coffee.</p>
     </footer>
+
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>

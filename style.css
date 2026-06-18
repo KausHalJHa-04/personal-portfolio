@@ -9,20 +9,20 @@
     --header-height: 4rem;
 
     /* Color tokens */
-    --bg: #0a0e17;
-    --bg-alt: #0d1424;
-    --surface: #111a2b;
-    --border-color: rgba(94, 234, 212, 0.14);
-    --border-color-soft: rgba(255, 255, 255, 0.06);
+    --bg: #050814;
+    --bg-alt: #0f1a34;
+    --surface: rgba(19, 31, 58, 0.92);
+    --border-color: rgba(107, 212, 255, 0.16);
+    --border-color-soft: rgba(255, 255, 255, 0.08);
 
-    --accent: #5eead4;       /* mint / teal — primary syntax accent */
-    --accent-rgb: 94, 234, 212;
-    --accent-2: #f5a623;     /* amber — secondary highlight */
-    --accent-2-rgb: 245, 166, 35;
+    --accent: #6bd4ff;       /* electric cyan */
+    --accent-rgb: 107, 212, 255;
+    --accent-2: #ff80bf;     /* coral pink */
+    --accent-2-rgb: 255, 128, 191;
 
-    --title-color: #f3f6fb;
-    --text-color: #aab4c5;
-    --muted-color: #6b7891;
+    --title-color: #f6f8ff;
+    --text-color: #c1d1f0;
+    --muted-color: #8ba3c9;
 
     /* Type */
     --font-display: 'Space Grotesk', sans-serif;
@@ -62,10 +62,27 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--bg);
     background-image:
-        radial-gradient(circle at 15% 0%, rgba(94, 234, 212, 0.05), transparent 35%),
-        radial-gradient(circle at 85% 20%, rgba(245, 166, 35, 0.04), transparent 35%);
+        radial-gradient(circle at 12% 12%, rgba(var(--accent-rgb), 0.18), transparent 24%),
+        radial-gradient(circle at 85% 8%, rgba(var(--accent-2-rgb), 0.12), transparent 20%),
+        radial-gradient(circle at 50% 110%, rgba(255,255,255,0.06), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0) 40%);
+    background-attachment: fixed;
+    background-size: cover;
     color: var(--text-color);
     line-height: 1.7;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(180deg, rgba(255,255,255,0.04) 0%, transparent 30%, rgba(255,255,255,0.04) 70%, transparent 100%),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 0%, transparent 20%, rgba(255,255,255,0.03) 80%, transparent 100%);
+    opacity: 0.08;
+    mix-blend-mode: screen;
+    z-index: -1;
 }
 
 h1, h2, h3, p { margin: 0; }
@@ -92,7 +109,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 /* ============ LAYOUT HELPERS ============ */
-.section { padding: 5rem 0; position: relative; }
+.section {
+    padding: 5rem 0;
+    position: relative;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(12px);
+}
 
 .bd-grid {
     max-width: 1100px;
